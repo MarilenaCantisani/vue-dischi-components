@@ -10,3 +10,18 @@ header {
         height: 60px;
     }
 } 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    select {
+        padding: 4px 6px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        option {
+            background-color: $white;
+        }
+    }
+}
+

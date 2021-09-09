@@ -12,25 +12,13 @@
 </template>
 
 <script>
-import axios from "axios";
 import Card from "@/components/Card.vue";
 export default {
   name: "Main",
   components: {
     Card,
   },
-  data() {
-    return {
-      cards: [],
-    };
-  },
-  created() {
-    axios
-      .get("https://flynn.boolean.careers/exercises/api/array/music")
-      .then((res) => {
-        this.cards = res.data.response;
-      });
-  },
+  props: ["cards"],
 };
 </script>
 
